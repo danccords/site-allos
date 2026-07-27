@@ -1,0 +1,1344 @@
+/* Configuração geral */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #1a1a1a;
+}
+
+
+/* Cabeçalho */
+
+.cabecalho {
+    height: 100px;
+    padding: 0 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #ffffff;
+}
+
+
+/* Logo */
+
+.logo {
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 170px;
+    max-height: 85px;
+    object-fit: contain;
+    display: block;
+}
+
+
+/* Menu */
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.menu a:hover {
+    color: #123f82;
+}
+
+
+/* Botão de contato */
+
+.botao-contato {
+    background-color: #123f82;
+    color: #ffffff;
+
+    padding: 14px 24px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    border-radius: 5px;
+}
+
+.botao-contato:hover {
+    background-color: #0b2d61;
+}
+
+
+/* =========================
+   SEÇÃO PRINCIPAL - HERO
+========================= */
+
+.hero {
+    min-height: calc(100vh - 100px);
+
+    display: flex;
+    align-items: center;
+
+    padding: 80px 10%;
+
+    background:
+        linear-gradient(
+            110deg,
+            #071a33 0%,
+            #0c3264 60%,
+            #123f82 100%
+        );
+}
+
+.hero-conteudo {
+    max-width: 850px;
+}
+
+.hero-destaque {
+    display: block;
+
+    margin-bottom: 25px;
+
+    color: #7ca9e8;
+
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+    color: #ffffff;
+
+    font-size: 64px;
+    line-height: 1.08;
+
+    margin-bottom: 25px;
+
+    letter-spacing: -2px;
+}
+
+.hero h1 strong {
+    color: #6fa5e8;
+}
+
+.hero p {
+    max-width: 650px;
+
+    color: #d5dfec;
+
+    font-size: 20px;
+    line-height: 1.6;
+
+    margin-bottom: 40px;
+}
+
+
+/* Botões */
+
+.hero-botoes {
+    display: flex;
+    gap: 15px;
+}
+
+.botao-principal,
+.botao-secundario {
+    display: inline-block;
+
+    padding: 17px 28px;
+
+    border-radius: 5px;
+
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.botao-principal {
+    background-color: #ffffff;
+    color: #123f82;
+}
+
+.botao-principal:hover {
+    background-color: #e7edf5;
+}
+
+
+.botao-secundario {
+    color: #ffffff;
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.botao-secundario:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* =========================
+   NOSSAS SOLUÇÕES
+========================= */
+
+.solucoes {
+    padding: 110px 10%;
+    background-color: #ffffff;
+}
+
+
+/* Cabeçalho da seção */
+
+.solucoes-cabecalho {
+    max-width: 800px;
+    margin-bottom: 70px;
+}
+
+.secao-destaque {
+    display: block;
+
+    margin-bottom: 18px;
+
+    color: #123f82;
+
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.solucoes-cabecalho h2 {
+    color: #0b1f3a;
+
+    font-size: 48px;
+    line-height: 1.15;
+
+    margin-bottom: 22px;
+}
+
+.solucoes-cabecalho p {
+    max-width: 650px;
+
+    color: #666666;
+
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* Grade de serviços */
+
+.solucoes-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+
+/* Cards */
+
+.solucao-card {
+    min-height: 320px;
+
+    padding: 40px;
+
+    border: 1px solid #e2e7ed;
+    border-radius: 8px;
+
+    position: relative;
+
+    transition: 0.3s;
+}
+
+.solucao-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #123f82;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+
+.numero-card {
+    display: block;
+
+    margin-bottom: 50px;
+
+    color: #6fa5e8;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.solucao-card h3 {
+    margin-bottom: 15px;
+
+    color: #0b1f3a;
+
+    font-size: 25px;
+}
+
+
+.solucao-card p {
+    max-width: 480px;
+
+    margin-bottom: 30px;
+
+    color: #666666;
+
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+.solucao-card a {
+    color: #123f82;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+/* =========================
+   SOBRE A ALLOS
+========================= */
+
+.sobre {
+    padding: 120px 10%;
+
+    background-color: #071a33;
+
+    color: #ffffff;
+}
+
+
+.sobre-conteudo {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 100px;
+
+    align-items: start;
+}
+
+
+/* Lado esquerdo */
+
+.sobre-destaque {
+    display: block;
+
+    margin-bottom: 25px;
+
+    color: #6fa5e8;
+
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+
+.sobre-esquerda h2 {
+    max-width: 600px;
+
+    font-size: 48px;
+    line-height: 1.15;
+
+    letter-spacing: -1px;
+}
+
+
+/* Lado direito */
+
+.sobre-direita {
+    max-width: 620px;
+}
+
+
+.sobre-direita p {
+    margin-bottom: 25px;
+
+    color: #b9c6d8;
+
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+.sobre-direita .sobre-texto-principal {
+    color: #ffffff;
+
+    font-size: 22px;
+    line-height: 1.6;
+}
+
+
+.sobre-link {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    color: #6fa5e8;
+
+    text-decoration: none;
+
+    font-size: 17px;
+    font-weight: bold;
+}
+
+
+.sobre-link:hover {
+    color: #ffffff;
+}
+
+/* =========================
+   CONTATO
+========================= */
+
+.contato {
+    padding: 120px 10%;
+    background-color: #f4f7fa;
+}
+
+
+.contato-conteudo {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 100px;
+
+    align-items: center;
+}
+
+
+/* Texto */
+
+.contato-texto h2 {
+    max-width: 600px;
+
+    margin-bottom: 25px;
+
+    color: #0b1f3a;
+
+    font-size: 52px;
+    line-height: 1.1;
+
+    letter-spacing: -1px;
+}
+
+
+.contato-texto p {
+    max-width: 580px;
+
+    color: #666666;
+
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* Opções de contato */
+
+.contato-opcoes {
+    display: flex;
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+
+.contato-card {
+    min-height: 170px;
+
+    padding: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #ffffff;
+
+    border: 1px solid #e0e6ed;
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+
+.contato-card:hover {
+    transform: translateX(8px);
+
+    border-color: #123f82;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+}
+
+
+.contato-card span {
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: #123f82;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+
+.contato-card h3 {
+    margin-bottom: 8px;
+
+    color: #0b1f3a;
+
+    font-size: 23px;
+}
+
+
+.contato-card p {
+    color: #777777;
+
+    font-size: 15px;
+}
+
+
+.contato-card strong {
+    margin-left: 20px;
+
+    color: #123f82;
+
+    font-size: 28px;
+}
+/* =========================
+   RODAPÉ
+========================= */
+
+.rodape {
+    padding: 80px 10% 30px;
+
+    background-color: #061529;
+    color: #ffffff;
+}
+
+
+.rodape-conteudo {
+    display: grid;
+
+    grid-template-columns: 2fr 1fr 1.5fr;
+
+    gap: 80px;
+
+    padding-bottom: 70px;
+}
+
+
+/* Marca */
+
+.rodape-marca img {
+    width: 170px;
+
+    margin-bottom: 25px;
+
+    background-color: #ffffff;
+}
+
+
+.rodape-marca p {
+    color: #aebdce;
+
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+
+/* Títulos */
+
+.rodape-navegacao span,
+.rodape-contato span {
+    display: block;
+
+    margin-bottom: 25px;
+
+    color: #6fa5e8;
+
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+/* Links */
+
+.rodape-navegacao,
+.rodape-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.rodape-navegacao a,
+.rodape-contato a {
+    margin-bottom: 13px;
+
+    color: #c3cfdd;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    transition: 0.2s;
+}
+
+
+.rodape-navegacao a:hover,
+.rodape-contato a:hover {
+    color: #ffffff;
+}
+
+
+/* Parte inferior */
+
+.rodape-inferior {
+    padding-top: 25px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+
+.rodape-inferior p {
+    color: #8292a5;
+
+    font-size: 13px;
+}
+
+/* =========================
+   MENU MOBILE
+========================= */
+
+.menu-mobile {
+    display: none;
+    background: none;
+    border: none;
+    color: #123f82;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.botao-contato-mobile {
+    display: none;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+   CELULARES E TABLETS
+========================= */
+
+/* =========================
+   AJUSTES PARA CELULAR
+========================= */
+
+@media (max-width: 600px) {
+
+    /* CABEÇALHO */
+
+    .cabecalho {
+        height: 85px;
+        padding: 0 7%;
+    }
+
+    .logo {
+        height: 75px;
+        display: flex;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 155px;
+        max-height: 75px;
+        object-fit: contain;
+    }
+
+    .menu {
+        top: 85px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        padding: 85px 7% 90px;
+    }
+
+    .hero-conteudo {
+        width: 100%;
+        max-width: none;
+    }
+
+    .hero-destaque {
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+        line-height: 1.05;
+        margin-top: 15px;
+    }
+
+    .hero p {
+        font-size: 17px;
+        line-height: 1.6;
+        margin-top: 25px;
+    }
+
+
+    /* BOTÕES DO HERO */
+
+    .hero-botoes {
+        margin-top: 35px;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+    .hero-botoes a {
+        width: 100%;
+
+        padding: 17px 20px;
+
+        text-align: center;
+    }
+
+
+    /* SOLUÇÕES */
+
+    .solucoes {
+        padding: 75px 7%;
+    }
+
+    .solucoes-cabecalho h2 {
+        font-size: 36px;
+        line-height: 1.15;
+    }
+
+
+    /* CARDS */
+
+    .solucao-card {
+        padding: 35px 28px;
+    }
+
+
+    /* SOBRE */
+
+    .sobre {
+        padding: 75px 7%;
+    }
+
+    .sobre-esquerda h2 {
+        font-size: 36px;
+    }
+
+
+    /* CONTATO */
+
+    .contato {
+        padding: 75px 7%;
+    }
+
+    .contato-texto h2 {
+        font-size: 36px;
+    }
+
+    .contato-card {
+        padding: 25px;
+        min-height: 150px;
+    }
+
+
+    /* RODAPÉ */
+
+    .rodape {
+        padding: 60px 7% 25px;
+    }
+
+}
+
+/* =========================
+   CORREÇÃO MENU MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+    .cabecalho .menu {
+        display: none;
+    }
+
+    .cabecalho .menu.ativo {
+        display: flex;
+    }
+
+    .cabecalho .menu-mobile {
+        display: block;
+        margin-left: auto;
+    }
+
+}
+
+/* =========================
+   MENU MOBILE DEFINITIVO
+========================= */
+
+@media (max-width: 900px) {
+
+    .cabecalho {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 85px;
+        padding: 0 7%;
+        z-index: 2000;
+    }
+
+    .cabecalho .logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .cabecalho .logo img {
+        width: 145px;
+        height: auto;
+    }
+
+
+    /* Esconde botão desktop */
+
+    .cabecalho > .botao-contato {
+        display: none;
+    }
+
+
+    /* Botão ☰ */
+
+    .cabecalho .menu-mobile {
+        display: block;
+        margin-left: auto;
+
+        background: transparent;
+        border: none;
+
+        color: #123f82;
+
+        font-size: 30px;
+        line-height: 1;
+
+        cursor: pointer;
+    }
+
+
+    /* MENU FECHADO */
+
+    .cabecalho .menu {
+        display: none;
+
+        position: absolute;
+
+        top: 85px;
+        left: 0;
+
+        width: 100%;
+
+        padding: 25px 7% 30px;
+
+        background: #ffffff;
+
+        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.10);
+
+        z-index: 1999;
+    }
+
+
+    /* MENU ABERTO */
+
+    .cabecalho .menu.ativo {
+        display: flex;
+
+        flex-direction: column;
+        align-items: stretch;
+
+        gap: 0;
+    }
+
+
+    /* Links */
+
+    .cabecalho .menu > a:not(.botao-contato-mobile) {
+        display: block;
+
+        width: 100%;
+
+        padding: 15px 0;
+
+        color: #0b1f3a;
+
+        font-size: 17px;
+        font-weight: 500;
+
+        text-decoration: none;
+
+        border-bottom: 1px solid #edf0f4;
+    }
+
+
+    /* Botão Fale conosco */
+
+    .cabecalho .menu .botao-contato-mobile {
+        display: block;
+
+        width: 100%;
+
+        margin-top: 22px;
+        padding: 16px;
+
+        background: #123f82;
+        color: #ffffff;
+
+        text-align: center;
+        text-decoration: none;
+
+        font-size: 16px;
+        font-weight: 600;
+
+        border-radius: 5px;
+    }
+
+}
+
+/* =========================
+   WHATSAPP FLUTUANTE
+========================= */
+
+.whatsapp-flutuante {
+    position: fixed;
+
+    right: 28px;
+    bottom: 28px;
+
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #25D366;
+    color: #ffffff;
+
+    border-radius: 50%;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.20);
+
+    z-index: 3000;
+
+    transition: 0.25s;
+}
+
+
+.whatsapp-flutuante:hover {
+    transform: translateY(-4px) scale(1.05);
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+
+@media (max-width: 600px) {
+
+    .whatsapp-flutuante {
+        right: 18px;
+        bottom: 18px;
+
+        width: 54px;
+        height: 54px;
+    }
+
+}
+
+/* =========================
+   EFEITOS DOS BOTÕES
+========================= */
+
+.hero-botoes a,
+.botao-contato,
+.botao-contato-mobile {
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background-color 0.25s ease;
+}
+
+
+.hero-botoes a:hover,
+.botao-contato:hover {
+    transform: translateY(-3px);
+}
+
+
+.hero-botoes a:active,
+.botao-contato:active,
+.botao-contato-mobile:active {
+    transform: translateY(0);
+}
+
+/* =========================
+   CORREÇÃO MOBILE
+   SOBRE + CONTATO + RODAPÉ
+========================= */
+
+@media (max-width: 600px) {
+
+    /* Evita qualquer conteúdo saindo da tela */
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+
+    /* =====================
+       SOBRE
+    ===================== */
+
+    .sobre {
+        width: 100%;
+        padding: 70px 7%;
+    }
+
+    .sobre-conteudo {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        max-width: 100%;
+
+        gap: 35px;
+    }
+
+    .sobre-esquerda,
+    .sobre-direita {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .sobre-esquerda h2 {
+        width: 100%;
+
+        font-size: 36px;
+        line-height: 1.1;
+    }
+
+    .sobre-direita p {
+        width: 100%;
+
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+
+    /* =====================
+       CONTATO
+    ===================== */
+
+    .contato {
+        width: 100%;
+        padding: 70px 7%;
+    }
+
+    .contato-conteudo {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        max-width: 100%;
+
+        gap: 40px;
+    }
+
+    .contato-texto,
+    .contato-opcoes {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .contato-texto h2 {
+        width: 100%;
+
+        font-size: 36px;
+        line-height: 1.1;
+    }
+
+    .contato-texto p {
+        width: 100%;
+        max-width: 100%;
+
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+
+    /* Cards de contato */
+
+    .contato-opcoes {
+        display: flex;
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .contato-card {
+        width: 100%;
+        max-width: 100%;
+
+        min-height: auto;
+
+        padding: 25px 22px;
+    }
+
+    .contato-card div {
+        width: calc(100% - 35px);
+    }
+
+    .contato-card h3 {
+        font-size: 20px;
+    }
+
+    .contato-card p {
+        font-size: 14px;
+
+        overflow-wrap: anywhere;
+        word-break: break-word;
+    }
+
+
+    /* =====================
+       RODAPÉ
+    ===================== */
+
+    .rodape-conteudo {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+
+        gap: 40px;
+    }
+
+    .rodape-marca,
+    .rodape-navegacao,
+    .rodape-contato {
+        width: 100%;
+    }
+
+}
+
+/* ==================================
+   BOTÃO FLUTUANTE WHATSAPP
+================================== */
+
+.whatsapp-flutuante {
+    position: fixed !important;
+
+    right: 30px !important;
+    bottom: 30px !important;
+
+    width: 65px !important;
+    height: 65px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    background-color: #25D366 !important;
+    color: white !important;
+
+    border-radius: 50% !important;
+
+    font-size: 15px !important;
+    font-weight: bold !important;
+
+    text-decoration: none !important;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.30) !important;
+
+    z-index: 999999 !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+
+/* WHATSAPP NO CELULAR */
+
+@media (max-width: 600px) {
+
+    .whatsapp-flutuante {
+        width: 58px !important;
+        height: 58px !important;
+
+        right: 18px !important;
+        bottom: 18px !important;
+
+        font-size: 13px !important;
+    }
+
+}
+
+.whatsapp-flutuante svg {
+    width: 36px !important;
+    height: 36px !important;
+    fill: #ffffff !important;
+    display: block !important;
+}
+
+@media (max-width: 600px) {
+    .whatsapp-flutuante svg {
+        width: 32px !important;
+        height: 32px !important;
+    }
+}
+
+/* ==========================================
+   WHATSAPP FLUTUANTE - VISUAL DEFINITIVO
+========================================== */
+
+.whatsapp-flutuante {
+    position: fixed !important;
+
+    right: 28px !important;
+    bottom: 28px !important;
+
+    width: 60px !important;
+    height: 60px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    padding: 0 !important;
+    margin: 0 !important;
+
+    background: #25D366 !important;
+
+    border: none !important;
+    border-radius: 50% !important;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.25) !important;
+
+    text-decoration: none !important;
+
+    z-index: 999999 !important;
+
+    overflow: hidden !important;
+}
+
+
+/* ÍCONE */
+
+.whatsapp-flutuante svg {
+    display: block !important;
+
+    width: 36px !important;
+    height: 36px !important;
+
+    fill: #ffffff !important;
+}
+
+
+/* EFEITO NO COMPUTADOR */
+
+.whatsapp-flutuante:hover {
+    transform: translateY(-3px) scale(1.05) !important;
+
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.30) !important;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    .whatsapp-flutuante {
+        width: 56px !important;
+        height: 56px !important;
+
+        right: 20px !important;
+        bottom: 24px !important;
+    }
+
+    .whatsapp-flutuante svg {
+        width: 33px !important;
+        height: 33px !important;
+
+        fill: #ffffff !important;
+    }
+
+}/* ========================================
+   CORREÇÃO MOBILE - CARDS DE SOLUÇÕES
+======================================== */
+
+@media (max-width: 768px) {
+
+    .solucoes-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .solucao-card {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .solucoes {
+        padding-left: 24px;
+        padding-right: 24px;
+        overflow: hidden;
+    }
+
+}
